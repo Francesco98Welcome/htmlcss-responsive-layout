@@ -17,6 +17,9 @@ header {
     margin: 0 auto;
     width: 65%;
 }
+.container-header > .logo > img {
+    width: 70%;
+}
 .container-header nav > ul {
     list-style: none;
     color: white;
@@ -49,7 +52,7 @@ header {
     width: 32%;
     min-height: 60px;
     margin-bottom: 16px;
-    border-radius: 12px;
+    border-radius: 16px;
     background-color: #b5ddff;
 }
 .sec1 > div:first-child {
@@ -78,12 +81,13 @@ header {
     width: 150px;
 }
 .img {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left: 20px;
 }
 .img > img {
     width: 180px;
     margin-bottom: -18px;
+    margin-top: 20px;
 }
 
 .icon-text-sec1 {
@@ -93,6 +97,7 @@ header {
 .icon-sec1 {
     color: #0084fd;
     font-size: 60px;
+    margin-top: 17px;
 }
 .icon-text-sec1 > h3 {
     color: #0084fd;
@@ -108,25 +113,77 @@ header {
 .sec2 {
     background-color: #9792e4;
     display: flex;
-    align-items: center;
 }
 .container-sec2 {
     width: 55%;
     margin: 0 auto;
-    border: 1px dashed black;
+    margin-bottom: 30px;
     display: flex;
+    padding: 0px 50px;
 }
-.container-sec2 div {
-    border: 1px solid black;
+.img-txt-sec2, .card-sec2 {
+    width: 50%;
+}
+.img-txt-sec2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.img-txt-sec2 > div {
     flex-grow: 1;
-    min-height: 200px;
-    text-align: center;
 }
-.container-sec2 > div:last-child{
+.img-txt-sec2 > div:first-child {
+    align-self: center;
+}
+.img-txt-sec2 > div:first-child > img {
+    width: 300px;
+    padding-top: 70px;
+}
+.img-txt-sec2 > div:last-child {
+    margin-top: 40px;
+}
+.img-txt-sec2 > div:last-child > p {
+    margin-top: 20px;
+}
+
+.card-sec2 {
     display: flex;
-   align-items: flex-end;
-   justify-content: center;
+    padding-top: 200px;
+    align-items: flex-end;
+    justify-content: center;
 }
+.card-sec2 > div {
+    width: 75%;
+    background-color: white;
+    min-height: 350px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.card-sec2 > div > img {
+    width: 150px;
+    padding-top: 20px;
+}
+.card-sec2 > div > h4 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+.card-sec2 > div > p {
+    margin-top: 8px;
+    margin-bottom: 22px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 25px;
+}
+.card-sec2 > div > span {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    padding: 10px 14px;
+    background-color: #9792e4;
+}
+
 
 
 
