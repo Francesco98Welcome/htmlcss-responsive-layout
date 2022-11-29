@@ -8,14 +8,17 @@
 /* header */
 header {
     background-color: #0084fd;
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 .container-header {
-    min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 65%;
+    padding: 10px;
 }
 .container-header > .logo > img {
     width: 70%;
@@ -27,10 +30,17 @@ header {
 }
 .container-header nav ul > li {
     margin-right: 20px;
+    align-items: center;
 }
-.container-header nav ul > a {
-    text-decoration: none;
+.container-header nav ul > li:hover,button:hover,.logo {
+    cursor: pointer;
+}
+nav > ul > button {
     color: black;
+    border: none;
+    background-color: white;
+    padding: 2px;
+    border-radius: 10px;
 }
 .menu {
     display: none;
@@ -47,22 +57,23 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 16px;
 }
-.sec1 div {
-    width: 32%;
-    min-height: 60px;
-    margin-bottom: 16px;
+.text-img-sec1 {
+    background-color: #b5ddff;
+    border-radius: 16px;
+}
+.sec1 > .icon-text-sec1 {
+    width: calc((100% / 3) - 1em);
     border-radius: 16px;
     background-color: #b5ddff;
 }
 .sec1 > div:first-child {
-    width: 66%;
+    width: 65%;
     display: flex;
 }
 .sec1 > div:first-child > div:first-child {
-    flex-grow: 0.8;
     padding-left: 20px;
-    padding-top: 17px;
 }
 .sec1 .text > h3 {
     color: #0084fd;
@@ -82,12 +93,11 @@ header {
 }
 .img {
     padding-top: 60px;
-    padding-left: 20px;
+    
 }
 .img > img {
-    width: 180px;
-    margin-bottom: -18px;
-    margin-top: 20px;
+    width: 80%;
+    margin-bottom: -26px;
 }
 
 .icon-text-sec1 {
@@ -98,6 +108,9 @@ header {
     color: #0084fd;
     font-size: 60px;
     margin-top: 17px;
+}
+.text {
+    text-align: left;
 }
 .icon-text-sec1 > h3 {
     color: #0084fd;
@@ -191,7 +204,6 @@ header {
 /* section 3 */
 .container-sec3 {
     width: 65%;
-    border: 1px dashed black;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -205,7 +217,6 @@ header {
     font-size: 30px;
 }
 .card-sec3 {
-    border: 1px solid black;
     display: flex;
     background-color: #9792e4;
     margin-top: 20px;
@@ -259,12 +270,10 @@ header {
 /* section 4 */
 .sec4 {
     min-height: 300px;
-    border: 1px dashed black;
     background-color: #9792e4;
     padding-bottom: 40px;
 }
 .container-sec4 {
-    border: 1px dashed black;
     width: 65%;
     margin: 0 auto;
 }
@@ -278,16 +287,34 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid black;
 }
 .container-wrap-sec4 > div {
-    width: 32.5%;
-    height: 100px;
-    border: 1px solid black;
-    margin-top: 8px;
+    width: calc((100% / 3) - 0.5rem);
+    padding: 20px;
+    margin-top: 10px;
     background-color: white;
     color: #9792e4;
     border-radius: 10px;
+}
+.container-wrap-sec4 > div > h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.container-wrap-sec4 > div > h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.container-wrap-sec4 > div > p {
+    font-size: 15px;
+    color: black;
+}
+.container-wrap-sec4 > div > button {
+    color: white;
+    background-color: #9792e4;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 14px;
 }
 
 
@@ -299,14 +326,13 @@ header {
 .container-sec5 {
     width: 65%;
     margin: 0 auto;
-    border: 1px dashed black;
     display: flex;
+    margin-bottom: 70px;
 }
 
 .text-sec5 {
     width: 68%;
     min-height: 100px;
-    border: 1px dashed black;
 }
 .text-sec5 > h2 {
     font-size: 50px;
@@ -327,13 +353,11 @@ header {
     width: 170px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 1px solid black;
     background-image: url('../img/about.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .title-button {
-    border: 1px solid black;
    width: 50%;
    margin: 0 auto; 
    margin-top: 10px;
@@ -350,4 +374,230 @@ header {
     border-radius: 10px;
     padding: 4px;
     font-size: 12px;
+}
+
+
+
+/* section 6 */
+.sec6 {
+    background-color: #9792e4;
+    min-height: 300px;
+    padding-bottom: 40px;
+}
+.container-sec6 {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 14px;
+    color: white;
+}
+.container-sec6 > h3 {
+    font-size: 25px;
+    margin-top: 12px;
+}
+.container-sec6 > h2 {
+    color: #fdc15f;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+.container-sec6 > p:last-child {
+    font-size: 13px;
+}
+.container-sec6 > button {
+    margin-top: 12px;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+    color: #9792e4;
+    margin-top: 30px;
+}
+.container-sec6 > .copyright {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+
+/* footer */
+footer {
+    background-color: #333333;
+}
+.container-footer {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding-top: 30px;
+}
+.container-footer > p:last-child {
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.container-footer > p > span {
+    color: #7f7bbb;
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERY */
+
+
+/* medium - tablet */
+
+@media screen and (max-width: 992px) {
+    /* header */
+    header {
+        width: 100%;
+    }
+    .container-header > nav > ul {
+        display: none;
+    }
+    .container-header > nav > span {
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* section 1 */
+    .sec1 {
+        margin-bottom: 60px;
+    }
+    .sec1 > div:first-child {
+        display: block;
+    }
+    .text > p {
+      padding-top: 20px;
+    }
+    .sec1 > .text-img-sec1 > .img > img {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    /* section 2 */
+    .container-sec2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 65%;
+    }
+    .img-txt-sec2 {
+        width: 100%;
+    }
+    .img-txt-sec2 > div:first-child > img {
+        width: 100%;
+    }
+    .img-txt-sec2 > div:last-child > h3 {
+        font-size: 40px;
+    }
+    .img-txt-sec2 > div:last-child > p {
+        font-size: 10px;
+    }
+
+    .card-sec2 {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .card-sec2 > div {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .card-sec2 > div > img {
+        width: 80%;
+    }
+
+    /* section 4 */
+    .container-wrap-sec4 {
+        display: flex;
+        width: 100%;
+    }
+    .container-wrap-sec4 > div {
+        width: 49%;
+        width: calc((100% / 2) - 0.5rem)
+    }
+
+    /* section 5 */
+    .title-button {
+        width: 80%;
+    }
+}
+
+
+/* small - mobile */
+
+@media screen and (max-width:768px) {
+    /* header */
+
+    /*section 1 */
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sec1 > .icon-text-sec1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /* section 2 */
+    .container-sec2 {
+        width: 65%;
+    }
+    .container-sec2 > .img-txt-sec2 
+    > div:last-child > p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .card-sec2 > div {
+        min-height: 50%;
+    }
+
+
+    /* section 3 */
+    .container-sec3 > .text-sec3 > h2 {
+        font-size: 30px;
+    }
+    .container-sec3 > .text-sec3 > p {
+        font-size: 17px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .card-sec3 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+    .img-sec3 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* section 4 */
+    .container-wrap-sec4 {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .container-wrap-sec4 > div {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 14px;
+    }
+
+    /* section 5 */
+    .container-sec5 {
+        display: block;
+    }
+    .container-sec5 > .text-sec5 {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .container-sec5 > .img-sec5 {
+        margin-left: 100px;
+    }
 }
